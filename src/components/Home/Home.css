@@ -1,0 +1,36 @@
+
+.third span::after {
+  content: "✨";
+  animation: blink 0.7s infinite;
+  animation: emojiCursor 2s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes emojiCursor {
+    0% { content: "💻"; }
+    25% { content: "🔥"; }
+    50% { content: "🚀"; }
+    75% { content: "✨"; }
+    100% { content: "💻"; }
+  }
+@media (max-width: 768px) {
+    .home-container{
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+    .left{
+        width: 90vw;
+        height: 50vh;
+        padding-left: 3vw;
+        
+    }
+    .right{
+        width: 90vw;
+        height: 50vh;
+    }
+}

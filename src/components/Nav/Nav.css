@@ -1,0 +1,18 @@
+.hamburger{
+    display: none;
+}
+.activeMobile{
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+@media (max-width: 768px){ 
+    .desktopMenu{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+}
