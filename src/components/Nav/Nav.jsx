@@ -1,11 +1,20 @@
 import { Link } from "react-scroll";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Nav = () => {
-  const arr = ["Home", "Projects", "About", "Contact"];
+  const arr = ["Home", "About", "Projects", "Contact"];
   const [show, setShow] = useState(false);
-
+  useGSAP(()=>{
+    const tl = gsap.timeline()
+    tl.from("nav h1",{
+      y:-100,
+      opacity:0,
+      duration:1,
+    })
+  })
   return (
     <nav className="w-full h-[10vh] flex items-center justify-between px-5 fixed z-50 bg-[rgb(17,20,23)]">
       <h1 className="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-zinc-300 font-extrabold">

@@ -6,7 +6,6 @@ import dsa from "../../assets/leetcode.png";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-
 const About = () => {
   let cards = [
     { title: "frontend developer", image: frontend },
@@ -104,8 +103,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="right w-[50%]">
-        <div className="container flex gap-[5vh] flex-col">
+      <div className="right w-[50%] h-fit">
+        <div className="container w-full h-full flex items-center gap-[5vh] flex-col">
           {cards.map((card, index) => {
             return <Card key={index} title={card.title} image={card.image} />;
           })}

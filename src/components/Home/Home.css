@@ -23,13 +23,12 @@
         flex-direction: column-reverse;
         width: 100vw;
     }
-    .left{
+    #home .left{
         width: 90vw;
         height: 50vh;
         padding-left: 3vw;
-        
     }
-    .right{
+    #home .right{
         width: 90vw;
         height: 50vh;
     }

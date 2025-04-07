@@ -5,7 +5,7 @@ import Nav from './components/Nav/Nav'
 import Projects from './components/Projects/Projects'
 const App = () => {
   return (
-    <div className='w-screen h-full text-white bg-[rgb(17,20,23)]'>
+    <div className='w-full overflow-x-hidden h-full text-white flex flex-col bg-[rgb(17,20,23)]'>
       <Nav />
       <Home />
       <About />
