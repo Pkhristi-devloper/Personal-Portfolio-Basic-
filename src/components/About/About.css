@@ -1,3 +1,17 @@
 .card:hover .container{
     top: 0%;
 }
+@media (max-width: 768px) {
+    #about{
+        flex-direction: column;
+        gap: 7vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}

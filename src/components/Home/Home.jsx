@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 const Home = () => {
   return (
     <div
-      className="home-container h-full w-full min-h-[90vh] flex pt-[10vh]"
+      className="home-container h-fit w-full min-h-[90vh] flex pt-[10vh]"
       id="home"
     >
       <div className="left h-[90vh] w-[50%] flex flex-col items-center justify-center ">

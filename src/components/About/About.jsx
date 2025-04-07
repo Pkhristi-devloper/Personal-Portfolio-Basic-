@@ -14,8 +14,8 @@ const About = () => {
     { title: "Competetive Programmer", image: dsa },
   ];
   return (
-    <div id="about" className="h-[100vh] w-full flex">
-      <div className="left w-[50%] flex items-center justify-center gap-[50px]">
+    <div id="about" className="min-h-[100vh] h-fit mt-10 w-full flex">
+      <div className="left w-[50%] h-full flex items-center justify-center gap-[50px]">
         <div className="circle flex items-center justify-center flex-col">
           <div className="round w-[70px] h-[70px] rounded-full shadow-[0px_10px_30px_[#7ed7ea]]  shadow-[#7ad7ea] bg-cyan-300 flex items-center justify-center text-4xl text-black cursor-pointer active:scale-95">
             {" "}
@@ -51,7 +51,7 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="information py-[40px] flex flex-col h-full justify-between">
+        <div className="information py-[20px] flex flex-col h-full justify-between gap-[5vh]">
           <div className="first">
             <h1 className="text-3xl uppercase font-bold bg-linear-90 from-[#ff0062] to-zinc-300 bg-clip-text text-transparent">
               Personal Info
@@ -104,7 +104,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="right">
+      <div className="right w-[50%]">
         <div className="container flex gap-[5vh] flex-col">
           {cards.map((card, index) => {
             return <Card key={index} title={card.title} image={card.image} />;
