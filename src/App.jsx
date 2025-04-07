@@ -8,8 +8,8 @@ const App = () => {
     <div className='w-screen h-full text-white bg-[rgb(17,20,23)]'>
       <Nav />
       <Home />
-      <Projects />
       <About />
+      <Projects />
       <Contact />
     </div>
   )

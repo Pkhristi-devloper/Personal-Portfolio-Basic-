@@ -43,7 +43,7 @@ const Nav = () => {
 
       {/* Mobile Menu (Slide Animation) */}
       <ul
-        className={`mobileMenu fixed top-[10vh] w-full h-[90vh] bg-blue-900/15 backdrop-blur-3xl text-xl flex flex-col items-center justify-center gap-10 transform transition-transform duration-500 z-40 ${
+        className={`mobileMenu fixed top-[10vh] w-full h-[100vh]  backdrop-blur-md text-xl flex flex-col items-center justify-center gap-10 transform transition-transform duration-500 z-40 ${
           show ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -52,7 +52,7 @@ const Nav = () => {
             key={index}
             to={item.toLowerCase()}
             smooth={true}
-            duration={1000}
+            duration={300}
             activeClass="text-[rgb(67,255,255)] border-b-[2px] border-[rgb(67,255,255)]"
             spy={true}
             onClick={() => setShow(false)}
