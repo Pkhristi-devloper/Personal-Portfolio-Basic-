@@ -1,0 +1,26 @@
+#projects .mainContainer {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #projects .sliderTrack {
+    display: flex;
+    animation: scroll-left 30s linear infinite;
+    width: max-content;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  #projects .sliderTrack a {
+    display: inline-flex;
+    margin-right: 20px;
+  }
+    

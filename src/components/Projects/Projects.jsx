@@ -1,42 +1,71 @@
+import Card from "../Card/Card";
 import "./Projects.css";
 
 const Projects = () => {
-  let projects = [
+  const projects = [
     {
-      title:"Food Delivery Website",
-      image:"https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/food.png",
-      url:"https://food-delivery-app-omega-gold.vercel.app/"
+      title: "Food Delivery Website",
+      image:
+        "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/food.png?raw=true",
+      url: "https://food-delivery-app-omega-gold.vercel.app/",
     },
     {
-      title:"Chatgpt Ai Assistant",
-      image:"https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/gpt.png",
-      url:"https://chatgpt-own-ai-model.vercel.app/"
+      title: "Chatgpt Ai Assistant",
+      image:
+        "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/gpt.png?raw=true",
+      url: "https://chatgpt-own-ai-model.vercel.app/",
     },
     {
       title: "Obys Agency",
-      image: "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/Obys.png",
+      image:
+        "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/Obys.png?raw=true",
       url: "https://pkhristi-devloper.github.io/Obys-Agency/",
     },
     {
-      title:"Dragging cardds",
-      image:"https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/cards.png",
-      url:"https://pkhristi-devloper.github.io/Dragging-cards/"
+      title: "Dragging Cards",
+      image:
+        "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/cards.png?raw=true",
+      url: "https://pkhristi-devloper.github.io/Dragging-cards/",
     },
     {
-      title: "Refokus clone",
-      image: "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/refokus.png",
+      title: "Refokus Clone",
+      image:
+        "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/refokus.png?raw=true",
       url: "https://github.com/Pkhristi-devloper/Refokus-Clone",
     },
     {
       title: "Ochi Eye Animation",
-      image: "",
-      url: "https://github.com/Pkhristi-devloper/Landing-page",
+      image:
+        "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/ochi.png?raw=true",
+      url: "https://github.com/Pkhristi-devloper/Ochi-Eye-Opening-Animation",
     },
   ];
+
+  const duplicatedProjects = [...projects, ...projects];
+
   return (
-    <div className="h-full w-full min-h-[100vh]" id="projects">
-      <h1>Some of My Previous Projects</h1>
-      <div className="container"></div>
+    <div className="h-fit w-full min-h-[100vh] py-10 px-5" id="projects">
+      <h1
+        className="text-4xl font-extrabold text-center bg-gradient-to-r from-[#ff0055] via-[#f7558b] to-[#eed3e0] bg-clip-text text-transparent"
+      >
+        Some of My Previous Projects
+      </h1>
+
+      <div className="mainContainer flex items-center h-[400px] overflow-hidden relative">
+        <div className="sliderTrack flex w-max animate-scrollLeft gap-[20px]">
+          {duplicatedProjects.map((project, index) => (
+            <a
+              key={index}
+              href={project.url}
+              target="_blank"
+              rel="noreferrer"
+              className="w-[400px] shrink-0"
+            >
+              <Card title={project.title} image={project.image} />
+            </a>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
