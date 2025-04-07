@@ -4,31 +4,31 @@ const Projects = () => {
   let projects = [
     {
       title:"Food Delivery Website",
-      image:"",
+      image:"https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/food.png",
       url:"https://food-delivery-app-omega-gold.vercel.app/"
     },
     {
       title:"Chatgpt Ai Assistant",
-      image:"",
+      image:"https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/gpt.png",
       url:"https://chatgpt-own-ai-model.vercel.app/"
     },
     {
       title: "Obys Agency",
-      image: "",
+      image: "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/Obys.png",
       url: "https://pkhristi-devloper.github.io/Obys-Agency/",
     },
     {
       title:"Dragging cardds",
-      image:"",
+      image:"https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/cards.png",
       url:"https://pkhristi-devloper.github.io/Dragging-cards/"
     },
     {
       title: "Refokus clone",
-      image: "",
+      image: "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/refokus.png",
       url: "https://github.com/Pkhristi-devloper/Refokus-Clone",
     },
     {
-      title: "Landing page",
+      title: "Ochi Eye Animation",
       image: "",
       url: "https://github.com/Pkhristi-devloper/Landing-page",
     },
