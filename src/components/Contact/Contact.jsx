@@ -4,46 +4,55 @@ import { useRef } from "react";
 
 const Contact = () => {
   let ref = useRef();
-  const isInView =  useInView(ref, {margin : "-100px"});
+  const isInView = useInView(ref, { margin: "-100px" });
   const variants1 = {
-    initial : {
-      x:-500,
-      opacity:0,
+    initial: {
+      x: -500,
+      opacity: 0,
     },
-    animate:{
-      x:0,
-      opacity:1,
-      transition:{
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
         duration: 0.5,
         staggerChildren: 0.1,
-      }
-    }
-  }
+      },
+    },
+  };
   const variants2 = {
-    initial : {
-      x:500,
-      opacity:0,
+    initial: {
+      x: 500,
+      opacity: 0,
     },
-    animate:{
-      x:0,
-      opacity:1,
-      transition:{
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
         duration: 0.5,
         staggerChildren: 0.1,
-      }
-    }
-  }
+      },
+    },
+  };
   return (
-    <motion.div ref={ref} id="contact" className="h-[90vh] mt-[5vh] w-full flex" >
-      <motion.div variants={variants1} initial="initial" whileInView="animate" className="left w-[50%] h-full">
-      <motion.div className="svgContainer w-full h-full flex justify-center items-center stroke-2 stroke-cyan-400">
-      <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+    <motion.div
+      ref={ref}
+      id="contact"
+      className="h-[90vh] pt-[8vh] mb-10 w-full flex items-center justify-center"
+    >
+      <motion.div
+        variants={variants1}
+        initial="initial"
+        whileInView="animate"
+        className="left w-[50%] h-full"
+      >
+        <motion.div className="svgContainer w-full h-full flex justify-center items-center stroke-2 stroke-cyan-400">
+          <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"
               initial={{ pathLength: 0 }}
               animate={isInView && { pathLength: 1 }}
-              transition={{duration: 3, delay: 1}}
+              transition={{ duration: 3, delay: 1 }}
               d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
@@ -59,10 +68,14 @@ const Contact = () => {
             C32.666,7.326,25.339,0,16.333,0z"
             />
           </svg>
-</motion.div>
-
+        </motion.div>
       </motion.div>
-      <motion.div variants={variants2} initial="initial" whileInView="animate" className="desktopForm right w-[50%] h-full p-[10px]">
+      <motion.div
+        variants={variants2}
+        initial="initial"
+        whileInView="animate"
+        className="desktopForm right w-[50%] h-full p-[10px]"
+      >
         <form
           action="https://formspree.io/f/mkgjpzja"
           method="POST"
@@ -99,30 +112,30 @@ const Contact = () => {
           </div>
         </form>
       </motion.div>
-      <div className="mobileForm right w-[50%] h-full p-[10px]">
+      <div className="mobileForm right w-[50%] h-full p-[10px] flex items-center justify-center">
         <form
           action="https://formspree.io/f/mkgjpzja"
           method="POST"
-          className="w-full h-full"
+          className="w-full h-full flex items-center justify-center mt-[-20vh]"
         >
           <div className="w-[90%] h-[90%] py-[5vh] border-[1px] rounded-2xl border-cyan-400 flex flex-col items-center justify-start gap-[5vh]">
-            <h1 className="text-3xl text-cyan-400 font-bold">
+            <h1 className="text-2xl text-cyan-400 font-bold">
               Let&apos;s Work together
             </h1>
             <input
-              className="text-lg border-cyan-300 border-[1px] outline-0 px-[5%] py-[1.5vh] w-[80%] rounded-2xl text-cyan-300"
+              className=" border-cyan-300 border-[1px] outline-0 px-[5%] py-[1.5vh] w-[80%] rounded-2xl text-cyan-300"
               type="text"
               name="Name"
               placeholder="Enter Your Name..."
             />
             <input
-              className="text-lg border-cyan-300 border-[1px] outline-0 px-[5%] py-[1.5vh] w-[80%] rounded-2xl text-cyan-300"
+              className=" border-cyan-300 border-[1px] outline-0 px-[5%] py-[1.5vh] w-[80%] rounded-2xl text-cyan-300"
               type="email"
               name="Email"
               placeholder="Enter Your Mail..."
             />
             <textarea
-              className="text-lg border-cyan-300 border-[1px] outline-0 px-[5%] py-[1.5vh] w-[80%] rounded-2xl text-cyan-300"
+              className=" border-cyan-300 border-[1px] outline-0 px-[5%] py-[1.5vh] w-[80%] rounded-2xl text-cyan-300"
               cols="500"
               name="Message"
               placeholder="Enter Your Message..."

@@ -44,7 +44,7 @@ const Projects = () => {
   const duplicatedProjects = [...projects, ...projects];
 
   return (
-    <div className="h-fit w-full min-h-[80vh] py-10 px-5" id="projects">
+    <div className="h-fit w-full min-h-[80vh] pt-20 px-5" id="projects">
       <h1
         className="text-4xl font-extrabold text-center bg-gradient-to-r from-[#ff0055] via-[#f7558b] to-[#eed3e0] bg-clip-text text-transparent"
       >

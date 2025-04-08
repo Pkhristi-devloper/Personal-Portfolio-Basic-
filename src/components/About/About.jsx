@@ -13,7 +13,7 @@ const About = () => {
     { title: "Competetive Programmer", image: dsa },
   ];
   return (
-    <div id="about" className="min-h-[100vh] h-fit mt-10 w-full flex">
+    <div id="about" className="min-h-[100vh] h-fit pt-15 w-full flex">
       <div className="left w-[50%] h-full flex items-center justify-center gap-[50px]">
         <div className="circle flex items-center justify-center flex-col">
           <div className="round w-[70px] h-[70px] rounded-full shadow-[0px_10px_30px_[#7ed7ea]]  shadow-[#7ad7ea] bg-cyan-300 flex items-center justify-center text-4xl text-black cursor-pointer active:scale-95">
