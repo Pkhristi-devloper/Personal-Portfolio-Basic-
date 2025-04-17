@@ -10,6 +10,12 @@ const Projects = () => {
       url: "https://food-delivery-app-omega-gold.vercel.app/",
     },
     {
+      title: "Food Delivery Website",
+      image:
+        "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/food_delivery.png?raw=true",
+      url: "https://food-delivery-nine-olive.vercel.app/",
+    },
+    {
       title: "Chatgpt Ai Assistant",
       image:
         "https://github.com/Pkhristi-devloper/Personal-Portfolio-Basic-/blob/main/src/assets/gpt.png?raw=true",
